@@ -176,7 +176,6 @@ stat_hc_m_community_abundance_composition=function(entity,minx,miny,maxx,maxy,sc
   mean_abun_=cbind(1:max_sp_n,mean_abun)
   mean_abun_=data.frame(mean_abun_)
   colnames(mean_abun_)=c("x","mean_abun")
-  print(list(sp_n=sp_n,abun=abun,total_abun=total_abun,mean_total_abun=mean_total_abun,sd_total_abun=sd_total_abun,mean_abun=mean_abun,sd_abun=sd_abun,mean_sp_n=mean_sp_n,sd_sp_n=sd_sp_n))
   p=ggplot(mean_abun_, aes(x=x, y=mean_abun)) +
     geom_point()+
     geom_errorbar(aes(ymin=mean_abun-sd_abun, ymax=mean_abun+sd_abun), width=.1) +
@@ -185,5 +184,8 @@ stat_hc_m_community_abundance_composition=function(entity,minx,miny,maxx,maxy,sc
     ylab("Species abundance")+
     xlab("Species rank in abundance")+
     scale_x_continuous(breaks = 1:max_sp_n)
-  p
+  print(p)
+  abun=as.data.frrame(abun)
+  abun$m_community_ID=1:nrow(abun)
+  list(sp_n=sp_n,abun=abun,total_abun=total_abun,mean_total_abun=mean_total_abun,sd_total_abun=sd_total_abun,mean_abun=mean_abun,sd_abun=sd_abun,mean_sp_n=mean_sp_n,sd_sp_n=sd_sp_n)
 }
