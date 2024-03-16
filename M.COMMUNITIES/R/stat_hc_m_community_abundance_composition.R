@@ -185,7 +185,7 @@ stat_hc_m_community_abundance_composition=function(entity,minx,miny,maxx,maxy,sc
     xlab("Species rank in abundance")+
     scale_x_continuous(breaks = 1:max_sp_n)
   print(p)
-  abun=as.data.frrame(abun)
+  abun=as.data.frame(abun)
   abun$m_community_ID=1:nrow(abun)
   list(sp_n=sp_n,abun=abun,total_abun=total_abun,mean_total_abun=mean_total_abun,sd_total_abun=sd_total_abun,mean_abun=mean_abun,sd_abun=sd_abun,mean_sp_n=mean_sp_n,sd_sp_n=sd_sp_n)
 }
