@@ -1,12 +1,22 @@
 Package: M.COMMUNITIES
 Type: Package
-Title: What the Package Does (Title Case)
+Title: 进行小群落相关分析
 Version: 0.1.0
-Author: Who wrote it
+Author: 杜昕
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: 进行小群落相关分析.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    betapart,
+    dbscan,
+    FD,
+    ggplot2,
+    minpack.lm,
+    picante,
+    spatstat,
+    stats,
+    vegan,
+    zoo
 RoxygenNote: 7.2.3
