@@ -2,7 +2,7 @@
 % Please edit documentation in R/sdiversity_hc_m_communities.R
 \name{sdiversity_hc_m_communities}
 \alias{sdiversity_hc_m_communities}
-\title{Title 计算基于hc聚类所划分小群落的物种多样性指数}
+\title{计算基于hc聚类所划分小群落的物种多样性指数}
 \usage{
 sdiversity_hc_m_communities(entity,minx,miny,maxx,maxy,scale,edge)
 }

@@ -1,4 +1,4 @@
-#' Title 计算基于dbscan聚类所划分小群落的物种多样性指数
+#' 计算基于dbscan聚类所划分小群落的物种多样性指数
 #' @description 计算基于dbscan划分小群落的物种多样性指数
 #' @usage sdiversity_dbscan_m_communities(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 #'

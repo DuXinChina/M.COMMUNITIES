@@ -2,7 +2,7 @@
 % Please edit documentation in R/abundance_hc_m_communities.R
 \name{abundance_hc_m_communities}
 \alias{abundance_hc_m_communities}
-\title{Title 计算由hc聚类所产生小群落中的物种丰度}
+\title{计算由hc聚类所产生小群落中的物种丰度}
 \usage{
 abundance_hc_m_communities(entity,minx,miny,maxx,maxy,scale,edge)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_hc_m_community_classification.R
 \name{plot_hc_m_community_classification}
 \alias{plot_hc_m_community_classification}
-\title{Title 绘制基于hc聚类划分的小群落的分布图}
+\title{绘制基于hc聚类划分的小群落的分布图}
 \usage{
 plot_hc_m_community_classification(entity,minx,miny,maxx,maxy,scale,edge)
 }
@@ -29,5 +29,5 @@ plot_hc_m_community_classification(entity,minx,miny,maxx,maxy,scale,edge)
 }
 \examples{
 entity=M.COMMUNITIES::entity
-plot_hc_m_community_classification(entity,minx=5,miny=5,maxx=5,maxy=5,scale=5,edge="inside")
+plot_hc_m_community_classification(entity,minx=5,miny=5,maxx=45,maxy=45,scale=5,edge="inside")
 }

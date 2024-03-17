@@ -1,4 +1,4 @@
-#' Title 计算由hc聚类所产生小群落中的物种丰度
+#' 计算由hc聚类所产生小群落中的物种丰度
 #' @description 计算由hc聚类所参数小群落中的物种丰度
 #' @usage abundance_hc_m_communities(entity,minx,miny,maxx,maxy,scale,edge)
 #' @param entity 植物个体的分布坐标与物种

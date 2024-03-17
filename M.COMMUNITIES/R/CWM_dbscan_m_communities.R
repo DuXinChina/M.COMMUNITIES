@@ -1,4 +1,4 @@
-#' Title 计算由dbscan聚类所产生小群落的群落平均功能性状值
+#' 计算由dbscan聚类所产生小群落的群落平均功能性状值
 #' @description 计算由dbscan聚类所产生小群落的群落平均功能性状值
 #' @usage CWM_dbscan_m_communities(entity,traits,minx,miny,maxx,maxy,eps,minPts,edge)
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/hc_m_community_classification.R
 \name{hc_m_community_classification}
 \alias{hc_m_community_classification}
-\title{Title 基于hc聚类对小群落进行划分}
+\title{基于hc聚类对小群落进行划分}
 \usage{
 hc_m_community_classification(entity,minx,miny,maxx,maxy,scale,edge)
 }

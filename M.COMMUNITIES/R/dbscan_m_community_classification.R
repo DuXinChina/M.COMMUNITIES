@@ -1,4 +1,4 @@
-#' Title 基于dbscan聚类对小群落进行划分
+#' 基于dbscan聚类对小群落进行划分
 #' @description 基于dbscan聚类对小群落进行划分
 #' @usage dbscan_m_community_classification(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 #' @param entity 植物个体的分布坐标与物种
@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' entity=M.COMMUNITIES::entity
-#' dbscan_m_community_classification(entity,minx=5,miny=5,maxx=5,maxy=5,eps=1,minPts=2,edge="centroid")
+#' dbscan_m_community_classification(entity,minx=5,miny=5,maxx=45,maxy=45,eps=2,minPts=1,edge="centroid")
 dbscan_m_community_classification=function(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 {
   area=(max(entity[,1])-min(entity[,1]))*(max(entity[,2])-min(entity[,2]))

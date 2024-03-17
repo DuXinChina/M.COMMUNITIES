@@ -2,7 +2,7 @@
 % Please edit documentation in R/CWM_dbscan_m_communities.R
 \name{CWM_dbscan_m_communities}
 \alias{CWM_dbscan_m_communities}
-\title{Title 计算由dbscan聚类所产生小群落的群落平均功能性状值}
+\title{计算由dbscan聚类所产生小群落的群落平均功能性状值}
 \usage{
 CWM_dbscan_m_communities(entity,traits,minx,miny,maxx,maxy,eps,minPts,edge)
 }

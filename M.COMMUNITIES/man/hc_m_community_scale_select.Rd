@@ -2,7 +2,7 @@
 % Please edit documentation in R/hc_m_community_scale_select.R
 \name{hc_m_community_scale_select}
 \alias{hc_m_community_scale_select}
-\title{Title 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度}
+\title{基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度}
 \usage{
 hc_m_community_scale_select(entity,minx,miny,maxx,maxy,window,two_nested_clu=FALSE)
 }

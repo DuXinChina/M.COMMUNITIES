@@ -1,4 +1,4 @@
-#' Title 基于hc聚类对小群落进行划分
+#' 基于hc聚类对小群落进行划分
 #' @description 基于hc聚类对小群落进行划分
 #' @usage hc_m_community_classification(entity,minx,miny,maxx,maxy,scale,edge)
 #' @param entity 植物个体的分布坐标与物种

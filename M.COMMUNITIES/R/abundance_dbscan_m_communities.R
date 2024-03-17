@@ -1,4 +1,4 @@
-#' Title 计算由dbscan聚类所产生小群落中的物种丰度
+#' 计算由dbscan聚类所产生小群落中的物种丰度
 #' @description 计算由dbscan聚类所参数小群落中的物种丰度
 #' @usage abundance_dbscan_m_communities(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 #'
@@ -16,7 +16,7 @@
 #'
 #' @examples
 #' entity=M.COMMUNITIES::entity
-#' abundance_dbscan_m_communities(entity,minx=5,miny=5,maxx=45,maxy=45,eps=1,minPts=2,edge="centroid")
+#' abundance_dbscan_m_communities(entity,minx=5,miny=5,maxx=45,maxy=45,eps=2,minPts=1,edge="centroid")
 #'
 abundance_dbscan_m_communities=function(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 {

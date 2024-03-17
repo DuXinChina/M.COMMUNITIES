@@ -1,4 +1,4 @@
-#' Title 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度
+#' 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度
 #' @description 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度
 #' @usage hc_m_community_scale_select(entity,minx,miny,maxx,maxy,window,two_nested_clu=FALSE)
 #'

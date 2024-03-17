@@ -1,4 +1,4 @@
-#' Title 计算由hc聚类所产生小群落间的平均配对功能性状距离(SES.贝塔MPD)
+#' 计算由hc聚类所产生小群落间的平均配对功能性状距离(SES.贝塔MPD)
 #' @description 计算由hc聚类所产生小群落间的平均配对功能性状距离(SES.贝塔MPD)
 #' @usage hc_m_community_Beta_MPD_pair(entity,traits,minx,miny,maxx,maxy,scale,replicate,edge)
 #'

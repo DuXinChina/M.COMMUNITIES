@@ -1,4 +1,4 @@
-#' Title 统计有hc聚类形成小群落中的物种丰度排序信息
+#' 统计有hc聚类形成小群落中的物种丰度排序信息
 #' @description 统计有hc聚类形成小群落中的物种丰度排序信息
 #' @usage stat_hc_m_community_abundance_composition(entity,minx,miny,maxx,maxy,scale,edge)
 #' @param entity 植物个体的分布坐标与物种

@@ -1,4 +1,4 @@
-#' Title 计算小群落物种组成的Bray_Curtis距离
+#' 计算小群落物种组成的Bray_Curtis距离
 #' @description 计算小群落物种组成的Bray_Curtis距离
 #' @usage hc_m_community_Bray_Curtis_pair(entity,minx,miny,maxx,maxy,scale,edge)
 #'

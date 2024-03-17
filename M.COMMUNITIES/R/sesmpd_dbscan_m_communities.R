@@ -1,4 +1,4 @@
-#' Title 计算由dbscan聚类所划分小群落的标准化平均配对性状距离(SES.MPD)
+#' 计算由dbscan聚类所划分小群落的标准化平均配对性状距离(SES.MPD)
 #' @description 计算由dbscan聚类所划分小群落的标准化平均配对性状距离(SES.MPD)
 #' @usage sesmpd_dbscan_m_communities(entity,traits,minx,miny,maxx,maxy,eps,minPts,replicate,edge)
 #'

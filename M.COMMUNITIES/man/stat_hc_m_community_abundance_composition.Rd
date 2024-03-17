@@ -2,7 +2,7 @@
 % Please edit documentation in R/stat_hc_m_community_abundance_composition.R
 \name{stat_hc_m_community_abundance_composition}
 \alias{stat_hc_m_community_abundance_composition}
-\title{Title 统计有hc聚类形成小群落中的物种丰度排序信息}
+\title{统计有hc聚类形成小群落中的物种丰度排序信息}
 \usage{
 stat_hc_m_community_abundance_composition(entity,minx,miny,maxx,maxy,scale,edge)
 }

@@ -1,4 +1,4 @@
-#' Title 计算由hc聚类所产生小群落的质心
+#' 计算由hc聚类所产生小群落的质心
 #' @description 计算由hc聚类所产生小群落的质心
 #' @usage centroid_hc_m_community(entity,minx,miny,maxx,maxy,scale,edge)
 #' @param entity 植物个体的分布坐标与物种
@@ -14,7 +14,7 @@
 #'
 #' @examples
 #' entity=M.COMMUNITIES::entity
-#' entroid_hc_m_community(entity,minx=5,miny=5,maxx=45,maxy=45,scale=5,edge="inside")
+#' centroid_hc_m_community(entity,minx=5,miny=5,maxx=45,maxy=45,scale=5,edge="inside")
 centroid_hc_m_community=function(entity,minx,miny,maxx,maxy,scale,edge)
 {
   area=(max(entity[,1])-min(entity[,1]))*(max(entity[,2])-min(entity[,2]))

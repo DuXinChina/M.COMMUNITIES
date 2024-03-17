@@ -1,4 +1,4 @@
-#' Title 绘制基于hc聚类划分的小群落的分布图
+#' 绘制基于hc聚类划分的小群落的分布图
 #' @description 绘制基于hc聚类划分的小群落的分布图
 #' @usage plot_hc_m_community_classification(entity,minx,miny,maxx,maxy,scale,edge)
 #' @param entity 植物个体的分布坐标与物种
@@ -14,7 +14,7 @@
 #'
 #' @examples
 #' entity=M.COMMUNITIES::entity
-#' plot_hc_m_community_classification(entity,minx=5,miny=5,maxx=5,maxy=5,scale=5,edge="inside")
+#' plot_hc_m_community_classification(entity,minx=5,miny=5,maxx=45,maxy=45,scale=5,edge="inside")
 plot_hc_m_community_classification=function(entity,minx,miny,maxx,maxy,scale,edge)
 {
 library(ggplot2)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/dbscan_m_community_classification.R
 \name{dbscan_m_community_classification}
 \alias{dbscan_m_community_classification}
-\title{Title 基于dbscan聚类对小群落进行划分}
+\title{基于dbscan聚类对小群落进行划分}
 \usage{
 dbscan_m_community_classification(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 }
@@ -31,5 +31,5 @@ dbscan_m_community_classification(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 }
 \examples{
 entity=M.COMMUNITIES::entity
-dbscan_m_community_classification(entity,minx=5,miny=5,maxx=5,maxy=5,eps=1,minPts=2,edge="centroid")
+dbscan_m_community_classification(entity,minx=5,miny=5,maxx=45,maxy=45,eps=2,minPts=1,edge="centroid")
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/hc_m_community_Bray_Curtis_pair.R
 \name{hc_m_community_Bray_Curtis_pair}
 \alias{hc_m_community_Bray_Curtis_pair}
-\title{Title 计算小群落物种组成的Bray_Curtis距离}
+\title{计算小群落物种组成的Bray_Curtis距离}
 \usage{
 hc_m_community_Bray_Curtis_pair(entity,minx,miny,maxx,maxy,scale,edge)
 }
