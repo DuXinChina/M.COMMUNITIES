@@ -1,15 +1,15 @@
-#' 统计有hc聚类形成小群落中的物种丰度排序信息
-#' @description 统计有hc聚类形成小群落中的物种丰度排序信息
+#' 统计有hc聚类形成小群落中的物种丰度排序信息 / Count the species abundance ranking information in the small clusters formed by HC clustering
+#' @description 统计有hc聚类形成小群落中的物种丰度排序信息 / Count the species abundance ranking information in the small clusters formed by HC clustering 
 #' @usage stat_hc_m_community_abundance_composition(entity,minx,miny,maxx,maxy,scale,edge)
-#' @param entity 植物个体的分布坐标与物种
-#' @param minx 核心区边界，最小x
-#' @param miny 核心区边界，最小y
-#' @param maxx 核心区边界，最大x
-#' @param maxy 核心区边界，最大y
-#' @param scale hc聚类的scale参数
-#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid"
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param minx 核心区边界，最小x / Core area boundary, minimum x
+#' @param miny 核心区边界，最小y / Core area boundary, minimum y
+#' @param maxx 核心区边界，最大x / Core area boundary, maximum x
+#' @param maxy 核心区边界，最大y / Core area boundary, maximum y
+#' @param scale hc聚类的scale参数 / Scale parameter of HC clustering
+#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid" / Method for screening small clusters based on boundaries, with optional "inside" and "centroid"
 #'
-#' @return 各类物种丰度相关信息
+#' @return 各类物种丰度相关信息 / Various types of species abundance-related information
 #' @export
 #'
 #' @examples
@@ -189,3 +189,4 @@ stat_hc_m_community_abundance_composition=function(entity,minx,miny,maxx,maxy,sc
   abun$m_community_ID=1:nrow(abun)
   list(sp_n=sp_n,abun=abun,total_abun=total_abun,mean_total_abun=mean_total_abun,sd_total_abun=sd_total_abun,mean_abun=mean_abun,sd_abun=sd_abun,mean_sp_n=mean_sp_n,sd_sp_n=sd_sp_n)
 }
+
