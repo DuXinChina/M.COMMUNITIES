@@ -1,19 +1,19 @@
-#' 计算由dbscan聚类所划分小群落的标准化平均配对性状距离(SES.MPD)
-#' @description 计算由dbscan聚类所划分小群落的标准化平均配对性状距离(SES.MPD)
+#' 计算由dbscan聚类所划分小群落的标准化平均配对性状距离(SES.MPD) / Calculate the Standardized Effect Size of Mean Pairwise Trait Distance (SES.MPD) for the small clusters partitioned by DBSCAN clustering
+#' @description 计算由dbscan聚类所划分小群落的标准化平均配对性状距离(SES.MPD) / Calculate the Standardized Effect Size of Mean Pairwise Trait Distance (SES.MPD) for the small clusters partitioned by DBSCAN clustering
 #' @usage sesmpd_dbscan_m_communities(entity,traits,minx,miny,maxx,maxy,eps,minPts,replicate,edge)
 #'
-#' @param entity 植物个体的分布坐标与物种
-#' @param traits 物种的功能性状
-#' @param minx 核心区边界，最小x
-#' @param miny 核心区边界，最小y
-#' @param maxx 核心区边界，最大x
-#' @param maxy 核心区边界，最大y
-#' @param eps dbscan聚类的eps参数
-#' @param minPts dbscan聚类的minPts参数
-#' @param replicate 零模型重复次数
-#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid"
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param traits 物种的功能性状 / Functional traits of species
+#' @param minx 核心区边界，最小x / Core area boundary, minimum x
+#' @param miny 核心区边界，最小y / Core area boundary, minimum y
+#' @param maxx 核心区边界，最大x / Core area boundary, maximum x
+#' @param maxy 核心区边界，最大y / Core area boundary, maximum y
+#' @param eps dbscan聚类的eps参数 / eps parameter of DBSCAN clustering
+#' @param minPts dbscan聚类的minPts参数 / minPts parameter of DBSCAN clustering
+#' @param replicate 零模型重复次数 / Number of null model repetitions 
+#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid" / Method for screening small clusters based on boundaries, with optional "inside" and "centroid"
 #'
-#' @return 标准化平均配对性状距离
+#' @return 标准化平均配对性状距离 / Standardized Mean Pairwise Trait Distance
 #' @export
 #'
 #' @examples
@@ -193,3 +193,4 @@ sesmpd_dbscan_m_communities=function(entity,traits,minx,miny,maxx,maxy,eps,minPt
   result[is.nan(result)]=0
   result
 }
+
