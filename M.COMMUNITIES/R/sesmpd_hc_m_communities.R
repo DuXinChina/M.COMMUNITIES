@@ -1,18 +1,18 @@
-#' 计算由hc聚类所划分小群落的标准化平均配对性状距离(SES.MPD)
-#' @description 计算由hc聚类所划分小群落的标准化平均配对性状距离(SES.MPD)
+#' 计算由hc聚类所划分小群落的标准化平均配对性状距离(SES.MPD) / Calculate the Standardized Effect Size of Mean Pairwise Trait Distance (SES.MPD) for the miror communities partitioned by HC clustering
+#' @description 计算由hc聚类所划分小群落的标准化平均配对性状距离(SES.MPD) / Calculate the Standardized Effect Size of Mean Pairwise Trait Distance (SES.MPD) for the miror communities partitioned by HC clustering
 #' @usage sesmpd_hc_m_communities(entity,traits,minx,miny,maxx,maxy,scale,replicate,edge)
 #'
-#' @param entity 植物个体的分布坐标与物种
-#' @param traits 物种的功能性状
-#' @param minx 核心区边界，最小x
-#' @param miny 核心区边界，最小y
-#' @param maxx 核心区边界，最大x
-#' @param maxy 核心区边界，最大y
-#' @param scale hc聚类的scale参数
-#' @param replicate 零模型重复次数
-#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid"
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param traits 物种的功能性状 / Functional traits of species
+#' @param minx 核心区边界，最小x / Core area boundary, minimum x
+#' @param miny 核心区边界，最小y / Core area boundary, minimum y
+#' @param maxx 核心区边界，最大x / Core area boundary, maximum x
+#' @param maxy 核心区边界，最大y / Core area boundary, maximum y
+#' @param scale hc聚类的scale参数 / Scale parameter of HC clustering
+#' @param replicate 零模型重复次数 / Number of null model repetitions
+#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid" / Method for screening miror communities based on boundaries, with optional "inside" and "centroid"
 #'
-#' @return 标准化平均配对性状距离
+#' @return 标准化平均配对性状距离 / Standardized Mean Pairwise Trait Distance
 #' @export
 #'
 #' @examples
@@ -208,3 +208,4 @@ sesmpd_hc_m_communities=function(entity,traits,minx,miny,maxx,maxy,scale,replica
   result[is.nan(result)]=0
   result
 }
+
