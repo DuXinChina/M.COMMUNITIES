@@ -1,17 +1,17 @@
-#' 以基于物种存在的SES.MPD及SES.E对基于物种丰度的SES.MPD进行分解
-#' @description 以基于物种存在的SES.MPD及SES.E对基于物种丰度的SES.MPD进行分解
+#' 以基于物种存在的SES.MPD及SES.E对基于物种丰度的SES.MPD进行分解 / Decompose the abundance-based SES.MPD using the presence-based SES.MPD and SES.E
+#' @description 以基于物种存在的SES.MPD及SES.E对基于物种丰度的SES.MPD进行分解 / Decompose the abundance-based SES.MPD using the presence-based SES.MPD and SES.E
 #' @usage VPA_priority_enviroment_hc(entity,traits,minx,miny,maxx,maxy,scale,replicate,edge="centroid")
-#' @param entity 植物个体的分布坐标与物种
-#' @param traits 物种的功能性状
-#' @param minx 核心区边界，最小x
-#' @param miny 核心区边界，最小y
-#' @param maxx 核心区边界，最大x
-#' @param maxy 核心区边界，最大y
-#' @param scale hc聚类的尺度
-#' @param replicate 零模型重复次数
-#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid"
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param traits 物种的功能性状 / Functional traits of species
+#' @param minx 核心区边界，最小x / Core area boundary, minimum x
+#' @param miny 核心区边界，最小y / Core area boundary, minimum y
+#' @param maxx 核心区边界，最大x / Core area boundary, maximum x
+#' @param maxy 核心区边界，最大y / Core area boundary, maximum y
+#' @param scale hc聚类的尺度 / scale of HC clustering
+#' @param replicate 零模型重复次数 / Number of null model repetitions
+#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid" / Method for screening mirror communities based on boundaries, with optional "inside" and "centroid"
 #'
-#' @return 基于物种丰度(存在)的SES.MPD、SES.E
+#' @return 基于物种丰度(存在)的SES.MPD、SES.E / Abundance-(presence-)based SES.MPD and SES.E
 #'
 #' @examples entity=M.COMMUNITIES::entity
 #' @examples traits=M.COMMUNITIES::traits
@@ -607,3 +607,4 @@ Data<<-subset(data,data[,3]>0)
 data=cbind(abundance,data)
 data
 }
+
