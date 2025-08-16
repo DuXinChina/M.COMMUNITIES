@@ -1,16 +1,16 @@
-#' 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度
-#' @description 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度
+#' 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度 / Method based on point pattern analysis to determine the reasonable clustering scale for dividing mirror communities via HC clustering
+#' @description 基于点格局分析的方法，判定以hc聚类划分小群落时的合理聚类尺度 / Method based on point pattern analysis to determine the reasonable clustering scale for dividing mirror communities via HC clustering
 #' @usage hc_m_community_scale_select(entity,minx,miny,maxx,maxy,window,two_nested_clu=FALSE)
 #'
-#' @param entity 植物个体的分布坐标与物种
-#' @param minx 研究范围的最小x
-#' @param miny 研究范围的最小y
-#' @param maxx 研究范围的最大x
-#' @param maxy 研究范围的最大y
-#' @param window 点格局分析时的窗口大小
-#' @param two_nested_clu 逻辑变量，可为T或F，判定是否模拟双尺度镶嵌托马斯过程
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param minx 研究范围的最小x / Minimum x of the study area
+#' @param miny 研究范围的最小y / Minimum y of the study area
+#' @param maxx 研究范围的最大x / Maximum x of the study area
+#' @param maxy 研究范围的最大y / Maximum y of the study area
+#' @param window 点格局分析时的窗口大小 / Window size in point pattern analysis
+#' @param two_nested_clu 逻辑变量，可为T或F，判定是否模拟双尺度镶嵌托马斯过程 / Logical variable (can be T or F) to determine whether to simulate the double-scale nested Thomas process
 #'
-#' @return 聚类尺度
+#' @return 聚类尺度 / Clustering scale
 #' @export
 #'
 #' @examples
@@ -105,3 +105,4 @@ hc_m_community_scale_select=function(entity,minx,miny,maxx,maxy,window,two_neste
   }
   par(mfrow = c(1, 1))
 }
+
