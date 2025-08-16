@@ -1,15 +1,15 @@
-#' 计算由hc聚类所产生小群落的质心
-#' @description 计算由hc聚类所产生小群落的质心
+#' 计算由hc聚类所产生小群落的质心 / Species abundance in each mirror community
+#' @description 计算由hc聚类所产生小群落的质心 / Species abundance in each mirror community
 #' @usage centroid_hc_m_community(entity,minx,miny,maxx,maxy,scale,edge)
-#' @param entity 植物个体的分布坐标与物种
-#' @param minx 核心区边界，最小x
-#' @param miny 核心区边界，最小y
-#' @param maxx 核心区边界，最大x
-#' @param maxy 核心区边界，最大y
-#' @param scale hc聚类的尺度
-#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid"
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param minx 核心区边界，最小x / Core area boundary, minimum x
+#' @param miny 核心区边界，最小y / Core area boundary, minimum y
+#' @param maxx 核心区边界，最大x / Core area boundary, maximum x
+#' @param maxy 核心区边界，最大y / Core area boundary, maximum y
+#' @param scale hc聚类的尺度 / scale of HC clustering
+#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid" / Method for screening mirror communities based on boundaries, with optional "inside" and "centroid"
 #'
-#' @return 各个小群落的质心坐标
+#' @return 各个小群落的质心坐标 / Centroid coordinates of each mirror community
 #' @export
 #'
 #' @examples
@@ -249,3 +249,4 @@ centroid_hc_m_community=function(entity,minx,miny,maxx,maxy,scale,edge)
   result=cbind(abundance,centroid)
   result
 }
+
