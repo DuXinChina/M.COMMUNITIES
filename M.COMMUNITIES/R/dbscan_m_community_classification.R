@@ -1,4 +1,4 @@
-#' 基于dbscan聚类对小群落进行划分
+#' 基于dbscan聚类对小群落进行划分 / Divide mirror communities based on DBSCAN clustering
 #' @description 基于dbscan聚类对小群落进行划分
 #' @usage dbscan_m_community_classification(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 #' @param entity 植物个体的分布坐标与物种
@@ -80,3 +80,4 @@ dbscan_m_community_classification=function(entity,minx,miny,maxx,maxy,eps,minPts
   result$m_community_class=match(result$m_community_class, sort(unique(result$m_community_class)))
   result
 }
+
