@@ -1,17 +1,17 @@
-#' 计算基于dbscan聚类所划分小群落的物种多样性指数
-#' @description 计算基于dbscan划分小群落的物种多样性指数
+#' 计算基于dbscan聚类所划分小群落的物种多样性指数 / Calculate the species diversity index of mirror communities divided via DBSCAN clustering
+#' @description 计算基于dbscan划分小群落的物种多样性指数 / Calculate the species diversity index of mirror communities divided via DBSCAN clustering
 #' @usage sdiversity_dbscan_m_communities(entity,minx,miny,maxx,maxy,eps,minPts,edge)
 #'
-#' @param entity 植物个体的分布坐标与物种
-#' @param minx 核心区边界，最小x
-#' @param miny 核心区边界，最小y
-#' @param maxx 核心区边界，最大x
-#' @param maxy 核心区边界，最大y
-#' @param eps dbscan聚类的eps参数
-#' @param minPts dbscan聚类的minPts参数
-#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid"
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param minx 核心区边界，最小x / Core area boundary, minimum x
+#' @param miny 核心区边界，最小y / Core area boundary, minimum y
+#' @param maxx 核心区边界，最大x / Core area boundary, maximum x
+#' @param maxy 核心区边界，最大y / Core area boundary, maximum y
+#' @param eps dbscan聚类的eps参数 / eps parameter of DBSCAN clustering
+#' @param minPts dbscan聚类的minPts参数 / minPts parameter of DBSCAN clustering
+#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid" / Method for screening mirror communities based on boundaries, with optional "inside" and "centroid"
 #'
-#' @return 物种多样性指数
+#' @return 物种多样性指数 / Species diversity index
 #' @export
 #'
 #' @examples
@@ -159,3 +159,4 @@ sdiversity_dbscan_m_communities=function(entity,minx,miny,maxx,maxy,eps,minPts,e
   diversity=cbind(abundance,Shannon,Simpson,Pielou_E,Max_relative_richness)
   diversity
 }
+
