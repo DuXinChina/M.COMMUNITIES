@@ -1,15 +1,15 @@
-#' 绘制基于hc聚类划分的小群落的分布图
-#' @description 绘制基于hc聚类划分的小群落的分布图
+#' 绘制基于hc聚类划分的小群落的分布图 / Draw the distribution map of mirror communities divided via HC clustering
+#' @description 绘制基于hc聚类划分的小群落的分布图 / Draw the distribution map of mirror communities divided via HC clustering
 #' @usage plot_hc_m_community_classification(entity,minx,miny,maxx,maxy,scale,edge)
-#' @param entity 植物个体的分布坐标与物种
-#' @param minx 核心区边界，最小x
-#' @param miny 核心区边界，最小y
-#' @param maxx 核心区边界，最大x
-#' @param maxy 核心区边界，最大y
-#' @param scale hc聚类的scale参数
-#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid"
+#' @param entity 植物个体的分布坐标与物种 / Distribution coordinates and species of plant individuals
+#' @param minx 核心区边界，最小x / Core area boundary, minimum x
+#' @param miny 核心区边界，最小y / Core area boundary, minimum y
+#' @param maxx 核心区边界，最大x / Core area boundary, maximum x
+#' @param maxy 核心区边界，最大y / Core area boundary, maximum y
+#' @param scale hc聚类的scale参数 / scale parameter of HC clustering
+#' @param edge 基于边界筛选小群落的方法，可选"inside"与"centroid" / Method for screening mirror communities based on boundaries, with optional "inside" and "centroid"
 #'
-#' @return 小群落空间分布图
+#' @return 小群落空间分布图 / Mirror community spatial distribution map
 #' @export
 #'
 #' @examples
@@ -97,3 +97,4 @@ p=ggplot(point,aes(x=x,y=y))+
   geom_hline(yintercept =c(miny,maxy),linetype=2)
 p
 }
+
